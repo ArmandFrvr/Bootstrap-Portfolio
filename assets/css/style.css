@@ -1,0 +1,368 @@
+
+/* Import reset CSS */
+/*@import url("reset.css");*/
+
+
+/* -------- General styles -------- */
+body {
+  background-image: url("../images/cork-wallet.png");
+  background-repeat: repeat;
+}
+
+/* Fixing bootstrap's fugliness */
+* {
+  line-height: 1;
+  font-size: 16px;
+}
+
+#fuck-bootstrap {
+  font-family: 'Karla', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #727272;
+}
+
+#fuck-bootstrap h1 {
+  color: #367C79; /* #4aaaa5 doesn't meet WCAG 2.0 contrast requirements */
+  font-family: 'Raleway', 'Georgia', Times, Times New Roman, serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#fuck-bootstrap h2 {
+  color: #367C79; /* #4aaaa5 doesn't meet WCAG 2.0 contrast requirements */
+  font-family: 'Raleway', 'Georgia', Times, Times New Roman, serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#fuck-bootstrap a {
+  color: #0000b3;
+  text-decoration: underline;
+}
+
+hr {
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.sub-text {
+  font-size: .8em;
+}
+
+
+a:visited {
+
+}
+/* -------------------------------- */
+
+
+
+/* ------------ Header ------------ */
+header {
+  background-color: #FFFFFF !important;
+  border-bottom: 2px solid #cccccc;
+  margin-bottom: 30px;
+}
+
+nav {
+  font-family: 'Karla', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  padding:20px;
+  text-align: center;
+/*  margin-right: 15px;
+  margin-left: 15px;*/
+}
+
+nav a:hover, nav a:focus {
+  /* color: #367C79; */
+  /*font-weight: bold;*/
+  background-color: #367C79;
+  color: white;
+}
+
+nav a {
+  display: inline-block;
+}
+
+nav a::first-letter {
+  border-bottom: 1px solid #0000b3;
+  padding-bottom: .01em;
+}
+
+#logo {
+  background-color: #367C79;
+  color: white;
+  font-size: 1.3em;
+  font-family: 'Raleway', 'Georgia', Times, Times New Roman, serif;
+  padding:20px;
+  display: inline-block;
+/*  margin-right: 15px;
+  margin-left: 15px;*/
+}
+
+/* -------------------------------- */
+
+
+
+/* ------- Social media box ------- */
+#social-media-wrapper {
+  text-align: center;
+}
+
+#social-media {
+  display: inline-block; /* Center div when it reaches max width */
+  background-color: #FFFFFF;
+  border: 1px solid #dddddd;
+  flex: 1 1 20%;
+  min-width: 180px;
+  text-align: center;
+  align-self: flex-start;
+  padding: 20px;
+  padding-top: 0;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  max-width: 350px;
+}
+
+h2.social-media {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr.social-media {
+  max-width: 94%;
+}
+
+.sm-icon {
+  padding: 0px;
+  margin: 0px;
+  width: 31%;
+  height: auto;
+}
+
+.sm-icon:hover {
+  width: 35%;
+  margin: -2%;
+}
+/* -------------------------------- */
+
+
+
+/* ---- Main area and flexbox ----- */
+#main-content {
+  background-color: #FFFFFF;
+  border: 1px solid #dddddd;
+  /*flex: 1 1 70%;*/
+  padding: 20px;
+  padding-top: 0;
+  margin-bottom: 50px;
+  /*margin-right: 15px;*/
+  /*margin-left: 15px;*/
+}
+
+/* -------------------------------- */
+
+
+
+/* ----------- Biography ---------- */
+.bio-img {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+/* Works without media query but isn't ideal to have a super
+narrow column of text on the right.  */
+@media (min-width: 650px) {
+    #fuck-bootstrap .bio-img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 649px) {
+  .bio-img {
+    width: 100%;
+  }
+}
+
+/* -------------------------------- */
+
+
+
+/* --------- Form styles ---------- */
+form {
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .4em;
+  margin-bottom: 1em;
+  margin-top: .3em;
+  font-family: 'Karla', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+button[type=submit] {
+  margin-bottom: 1em;
+}
+
+button[type=submit]:hover, button[type=submit]:focus {
+  color: white;
+  background-color: #367C79;
+}
+
+.required:before {
+  position: absolute;
+  margin-left: -10px;
+  content: "* ";
+  color: #C00000;
+}
+
+/* Placeholder text styling snipped from https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Placeholder_Research */
+-webkit-input-placeholder {
+  color: #767676;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #767676;
+  opacity: 1;
+}
+::-moz-placeholder { /* Firefox 19 */
+  color: #767676;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #767676;
+  opacity: 1;
+}
+/* -------------------------------- */
+
+
+
+/* Portfolio styles */
+
+#portfolio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: -15px;
+}
+
+.portfolio-item {
+  flex-grow: 1;
+  flex-basis: 200px;
+  width: 200px;
+  min-width: 200px;
+  max-width: 300px;
+  margin: 15px;
+  position: relative;
+}
+
+@media (max-width: 599px) {
+  .portfolio-item {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.portfolio-filler { /* 0-height boxes for last row spacing */
+  flex-grow: 1;
+  flex-basis: 200px;
+  width: 200px;
+  height: 0px;
+  min-width: 200px;
+  max-width: 300px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.portfolio-item-img {
+  width: 100%;
+}
+
+.portfolio-item-label {
+  position: absolute;
+  top: 69%;
+  width: calc(100% - 20px);
+  background: #367C79;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 6%;
+  margin: 0;
+  font-size: 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* Footer styling */
+
+footer {
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  background-color: #666666;
+  color: #FDFDFD;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Bootstrap's navbars are the stupidest things ever.  This would have
+been so much easier to do with flexbox and leave navbar out of it.  */
+
+/* FYI, I had this as a sticky footer at first and decided it was bad
+because no one cares about your copyright being visible all the time. */
+
+#fuck-bootstrap footer {
+  border-radius: 0px;
+  margin-bottom: 0px;
+  border: none;
+  border-top: 10px solid #367C79;
+  position: absolute;
+}
+
+#page-wrapper {
+  padding-bottom: 60px;
+  position: relative;
+  min-height: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+ /*
+ * Responsive text aligning
+ * http://ohryan.ca/2014/08/14/set-responsive-text-alignment-bootstrap-3/
+ */
+ @media (max-width: 767px) {
+  .text-xs-left { text-align: left; }
+  .text-xs-right { text-align: right; }
+  .text-xs-center { text-align: center; }
+  .text-xs-justify { text-align: justify; }
+}
+
+@media (min-width: 768px) {
+  .text-sm-left { text-align: left; }
+  .text-sm-right { text-align: right; }
+  .text-sm-center { text-align: center; }
+  .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: 992px) {
+  .text-md-left { text-align: left; }
+  .text-md-right { text-align: right; }
+  .text-md-center { text-align: center; }
+  .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: 1200px) {
+  .text-lg-left { text-align: left; }
+  .text-lg-right { text-align: right; }
+  .text-lg-center { text-align: center; }
+  .text-lg-justify { text-align: justify; }
+}
+
+
