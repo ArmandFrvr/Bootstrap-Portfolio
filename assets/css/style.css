@@ -94,8 +94,7 @@ nav a::first-letter {
   font-family: 'Raleway', 'Georgia', Times, Times New Roman, serif;
   padding:20px;
   display: inline-block;
-/*  margin-right: 15px;
-  margin-left: 15px;*/
+  text-shadow: 1px 1px #333333;
 }
 
 /* -------------------------------- */
@@ -120,6 +119,7 @@ nav a::first-letter {
   padding-bottom: 25px;
   margin-bottom: 50px;
   max-width: 350px;
+  border-radius: 10px;
 }
 
 h2.social-media {
@@ -150,12 +150,10 @@ hr.social-media {
 #main-content {
   background-color: #FFFFFF;
   border: 1px solid #dddddd;
-  /*flex: 1 1 70%;*/
+  border-radius: 10px;
   padding: 20px;
   padding-top: 0;
   margin-bottom: 50px;
-  /*margin-right: 15px;*/
-  /*margin-left: 15px;*/
 }
 
 /* -------------------------------- */
@@ -237,6 +235,13 @@ button[type=submit]:hover, button[type=submit]:focus {
 /* -------------------------------- */
 
 
+/* I'm still using flex for the portfolio because while I could use
+Bootstrap to make rows and columns, what I really want is for the
+portfolio to dynamically allocate items such that the number of items
+per row will change depending on the width of the screen.  I guess I
+could try sticking them all in one row and let the number of columns
+handle the wrapping when it exceeds 12... seems kludgey though.  Flex
+is *designed* for this. */
 
 /* Portfolio styles */
 
@@ -281,16 +286,19 @@ button[type=submit]:hover, button[type=submit]:focus {
 
 #fuck-bootstrap .portfolio-item-label {
   position: absolute;
-  top: 69%;
-  width: 100%;
+  top: 72%;
+  width: 90%;
   background: #367C79;
   color: #FFFFFF;
   text-align: center;
-  padding: 6%;
+  padding: 4%;
   margin: 0;
   font-size: 1em;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 
