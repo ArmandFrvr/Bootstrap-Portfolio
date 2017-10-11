@@ -7,6 +7,8 @@
 body {
   background-image: url("../images/cork-wallet.png");
   background-repeat: repeat;
+  font-family: 'Karla', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #727272;
 }
 
 /* Fixing bootstrap's fugliness */
@@ -15,26 +17,21 @@ body {
   font-size: 16px;
 }
 
-#fuck-bootstrap {
-  font-family: 'Karla', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  color: #727272;
-}
-
-#fuck-bootstrap h1 {
+h1 {
   color: #367C79; /* #4aaaa5 doesn't meet WCAG 2.0 contrast requirements */
   font-family: 'Raleway', 'Georgia', Times, Times New Roman, serif;
   font-size: 1.5em;
   font-weight: bold;
 }
 
-#fuck-bootstrap h2 {
+h2 {
   color: #367C79; /* #4aaaa5 doesn't meet WCAG 2.0 contrast requirements */
   font-family: 'Raleway', 'Georgia', Times, Times New Roman, serif;
   font-size: 1.3em;
   font-weight: bold;
 }
 
-#fuck-bootstrap a {
+a {
   color: #0000b3;
   text-decoration: underline;
 }
@@ -169,7 +166,7 @@ hr.social-media {
 /* Works without media query but isn't ideal to have a super
 narrow column of text on the right.  */
 @media (min-width: 650px) {
-    #fuck-bootstrap .bio-img {
+  .bio-img {
     max-width: 300px;
   }
 }
@@ -284,7 +281,7 @@ is *designed* for this. */
   width: 100%;
 }
 
-#fuck-bootstrap .portfolio-item-label {
+.portfolio-item-label {
   position: absolute;
   top: 72%;
   width: 90%;
