@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
   <title>Alwyn's Portfolio - About Me</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -20,10 +24,10 @@
 
 </head>
 
-<body id="fuck-bootstrap">
+<body>
   <div id="page-wrapper" class="container-fluid">
 
-    <header id="headerbar" class="row">
+<!-- <header id="headerbar" class="row">
       <div id="logo-wrapper" class="col-xs-12 col-md-7 col-md-offset-1 text-xs-center text-sm-center text-md-left">
         <div id="logo">
           Alwyn Durham
@@ -34,7 +38,31 @@
         <a href="portfolio.html" accesskey="p">Portfolio</a> |
         <a href="contact.html" accesskey="c">Contact</a>
       </nav>
-    </header>
+    </header> -->
+
+    <nav id="headerbar" class="navbar navbar-default navbar-fixed-top">
+      <!-- <div id="navbar-inner"> -->
+        <div id="logo-wrapper" class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div id="logo" class="navbar-brand">
+              Alwyn Durham
+            </div>
+          </div>
+        <!-- </div> -->
+        <div class="collapse navbar-collapse" id="myNavBar">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html" accesskey="a">About</a></li>
+            <li><a href="portfolio.html" accesskey="p">Portfolio</a></li>
+            <li><a href="contact.html" accesskey="c">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <div id="wrapper" class="row">
       <div class="col-xs-12 col-md-7 col-md-offset-1">
@@ -60,8 +88,8 @@
 
     </div>
 
-    <footer class="navbar fixed-bottom sub-text">
-      Copyright © 2017 Alwyn Durham
+    <footer class="fixed-bottom sub-text">
+      Copyright &copy; 2017 Alwyn Durham
     </footer>
 
   </div>
